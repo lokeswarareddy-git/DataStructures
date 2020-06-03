@@ -12,7 +12,7 @@ def pair_sum(list1, k):
             seen.add(num)
         else:
             output.add((min(target, num), max(target, num)))
-    print(output)
+    print('/n'.join(map(str,list(output))))
     if len(output) > 0:
         print("List is having pair of sum")
     else:

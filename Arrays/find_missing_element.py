@@ -53,3 +53,22 @@ missing_num = finder3(list1, list2)
 print ("Missing Number from finder3 method :", missing_num)
 
 
+
+# Solution 4
+import collections
+def finder4(list1, list2):
+    d = collections.defaultdict(int)
+    for num in list2:
+        d[num] += 1
+        print(d)
+    for num in list1:
+        if d[num] == 0:
+            return num
+        else:
+            return list1[-1]
+
+list1 = [1,2,5,7,8,6,9]
+list2 = [1,2,8,6,5,9]
+missing_num = finder4(list1, list2)
+print ("Missing Number from finder3 method :", missing_num)
+
