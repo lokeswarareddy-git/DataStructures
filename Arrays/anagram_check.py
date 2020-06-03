@@ -1,10 +1,10 @@
-#Easy Solution 
+#Solution1: Easy Solution 
 def anagram1(s1, s2):
     s1 = s1.replace(' ' , '').lower()  #O(n)
     s2 = s2.replace(' ' , '').lower()  #O(n)
     return sorted(s1) == sorted(s2)
 
-# Solution with some coding involded 
+#Solution2:  Solution with some coding involded 
 
 def anagram2(s1, s2):
     s1 = s1.replace(' ', '').lower()      #O(n)
@@ -32,7 +32,7 @@ def anagram2(s1, s2):
             return False
 
     return True 
-    ### Pythonic way of solution 
+    ### Solution 3: Pythonic way of solution 
 from collections import Counter
 def anagram3(s1, s2):
     s1 = s1.replace(' ', '').lower()  #O(n)
