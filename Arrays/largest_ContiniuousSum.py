@@ -8,5 +8,5 @@ def largestSum(list1):
 
     return max_sum
 
-list1 = [1,3,4,-4,5,6,7,-8]
+list1 = [1,2,-1,3,4,10,10,-10,-1]
 print(largestSum(list1))

@@ -34,4 +34,3 @@ def strCompress2(s):
 
 s = 'AAAABBBBBCCCC'
 print(strCompress2(s))
-

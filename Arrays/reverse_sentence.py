@@ -1,6 +1,7 @@
 # Reverce the words in the sentence
 def revSentence(s):
-    s.strip()
+    s1 = s.strip()
+    print(s1)
     rString = ''
     sWords = s.split(' ')
     for word in reversed(sWords):
@@ -24,4 +25,5 @@ def revSentence1(s):
     return " ".join(reversed(words))
 rs = revSentence1(s)
 print(rs)
+rs = revSentence(s)
 
